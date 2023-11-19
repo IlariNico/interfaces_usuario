@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/* USAR FUENTE ASI: font-family: 'Lato', sans-serif; */
+:root{
+    --color_white:#fff;
+    --color_black:#000;
+    --color_blue:#02187E;
+    --color_yellow:#FFE901;
+    --color_lightblue:#2982FF;
+    --degrade_header:linear-gradient(180deg, #5499F8 0%, #5499F8 87.91%, rgba(84, 153, 248, 0.00) 100%);
+}
+.h1{
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 94.5%;
+    font-family: 'Lato', sans-serif;;
+}
+.h2{
+    font-family: 'Lato', sans-serif;;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 94.5%;
+}
+.p,.a{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.a{
+    letter-spacing: 2.2px;
+    text-decoration-line: underline;
+}
+.underline{
+    text-decoration-line: underline; 
+}
+.font_button{
+    color: var(--color_blue);
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 94.5%;
+    letter-spacing: 2.2px;
+}
+.shadow_blue{
+    box-shadow: 4px 5px 0px 0 var(--color_blue);
+}
+.shadow_grey{
+    box-shadow: 3px 6px 8px 4px rgba(0, 0, 0, 0.15);
+}
+.button{
+    border: 9px solid var(--color_lightblue);
+    background: var(--color_yellow);
+    border-radius: 111px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}

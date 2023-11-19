@@ -1,0 +1,16 @@
+body{
+    width: 1280px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header{
+    width: 1280px;
+    height: 227px;
+    background: var(--degrade_header);
+}
+
+header.scrolleando{
+    height: 103px;
+}
