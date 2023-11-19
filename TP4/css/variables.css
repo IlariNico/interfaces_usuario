@@ -6,6 +6,7 @@
     --color_blue:#02187E;
     --color_yellow:#FFE901;
     --color_lightblue:#2982FF;
+    --color_lightblue_L1:#5499F8;
     --degrade_header:linear-gradient(180deg, #5499F8 0%, #5499F8 87.91%, rgba(84, 153, 248, 0.00) 100%);
 }
 .h1{
