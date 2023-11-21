@@ -7,8 +7,10 @@ function moverDuende(){
     
     let scrollY = window.scrollY;
 
-    let velocidad = duende.getAttribute("data-velocidad");
-    let newPosY = scrollY * velocidad / 25 ;
-    duende.style.top = newPosY+"px"
+    if(scrollY < 792){
+        let velocidad = duende.getAttribute("data-velocidad");
+        let newPosY = scrollY * velocidad / 35 ;
+        duende.style.top = newPosY+"px"
+    }
 
 }
