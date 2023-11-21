@@ -9,7 +9,7 @@ header{
     width: 1280px;
     height: 227px;
     background: var(--degrade_header);
-    z-index: 500;
+    z-index: 20;
     position: sticky;
     top: 0;
     transition: .5s ease-in;

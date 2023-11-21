@@ -6,4 +6,6 @@ window.addEventListener("scroll",()=>{
     }else if (window.scrollY == 0 ){
         header.classList.remove("scrolleando")
     }
+
+    
 })
