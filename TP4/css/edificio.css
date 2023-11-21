@@ -65,8 +65,9 @@
 }
 
 .seccion_edificios .telaaraña.roja{
-    left: -180px;
+    left: -172px;
     top: 250px;
+    z-index: 250;
 }
 .seccion_edificios .telaaraña.negra{
     top: 263px;
