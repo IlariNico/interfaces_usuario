@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="css/contenedores.css" />
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/edificio.css">
+    <link rel="stylesheet" href="css/edificio.css" />
+    <link rel="stylesheet" href="css/conocer.css">
   </head>
   <body>
-    <header class="scrolleando">
+    <header>
       <div>
         <div class="btn_menu">
           <div class="borde shadow_blue">
@@ -19,25 +20,74 @@
           <div class="borde shadow_blue"><div class="linea mid"></div></div>
           <div class="borde shadow_blue"><div class="linea bot"></div></div>
         </div>
-        <img src="images/logo.png" alt="Logo">
+        <img src="images/logo.png" alt="Logo" />
         <button class="button font_button shadow_blue">COMPRAR</button>
       </div>
     </header>
-    
+
     <div class="seccion_edificios">
-        <img src="images/cielo.png" alt="cielo" class="cielo">
+      <img src="images/cielo.png" alt="cielo" class="cielo" />
 
-        <img src="images/edificio_izquierda.png" alt="Edificio izq" class="edificio izquierda">
-        <img src="images/edificio_medio.png" alt="Edificio med" class="edificio medio">
-        <img src="images/edificio_derecha.png" alt="Edificio der" class="edificio derecha">
+      <img
+        src="images/edificio_izquierda.png"
+        alt="Edificio izq"
+        class="edificio izquierda"
+        data-speed="5"
+      />
+      <img
+        src="images/edificio_medio.png"
+        alt="Edificio med"
+        class="edificio medio"
+        data-speed="10"
+      />
+      <img
+        src="images/edificio_derecha.png"
+        alt="Edificio der"
+        class="edificio derecha"
+        data-speed="5"
+      />
 
-        <img src="images/violeta.png" alt="Spider violeta" class="spiderman violeta">
-        <img src="images/rojo.png" alt="Spider rojo" class="spiderman rojo">
-        <img src="images/negro.png" alt="Spider negro" class="spiderman negro">
+      <img
+        src="images/violeta.png"
+        alt="Spider violeta"
+        class="spiderman violeta"
+      />
+      <img src="images/rojo.png" alt="Spider rojo" class="spiderman rojo" />
+      <img src="images/negro.png" alt="Spider negro" class="spiderman negro" />
 
-        <img src="images/telaaraña_rojo.png" alt=" telaaraña_rojo" class="telaaraña roja">
-        <img src="images/telaaraña_negro.png" alt=" telaaraña_negro" class="telaaraña negra">
+      <img
+        src="images/telaaraña_rojo.png"
+        alt=" telaaraña_rojo"
+        class="telaaraña roja"
+      />
+      <img
+        src="images/telaaraña_negro.png"
+        alt=" telaaraña_negro"
+        class="telaaraña negra"
+      />
+    </div>
+
+    <div class="seccion_conocer">
+      <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="845" viewBox="0 0 1280 845" fill="none">
+        <path d="M0 715.25L1280 845V0.5L0 80V715.25Z" fill="#8F6AA6"/>
+      </svg>
+      <div class="contenedor">
+        <div class="izquierda">
+          <h1 class="h1">Conoce a Spidey y sus sorprendentes amigos</h1>
+          <p class="p">
+            Spidey, nuestro lanzador de telarañas favorito se une a Ghost-Spider
+            (Gwen Stacey) y Miles Morales para formar el equipo de Spidey, con la
+            ayuda del cómico pero leal robot de Spidey, TRACE-E. Si Spidey se
+            encuentra en una situación difícil donde necesita aún más poder de
+            superhéroe, tengan la seguridad de que un amigo de los Vengadores
+            correrá para ayudar.
+          </p>
+          <img src="./images/conoce_amigos.png" alt="Conoce a los amigos">
+        </div>
+        <img src="./images/marciano.png" alt="Marciano">
+      </div>
     </div>
     <script src="js/header_sticky.js"></script>
+    <script src="js/parallax_scroll.js"></script>
   </body>
 </html>

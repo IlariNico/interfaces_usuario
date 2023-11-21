@@ -37,6 +37,7 @@ header img{
     top: 91px;
     left: calc(227px);
     z-index: 150;
+    transition: .5s ease-in;
 }
 header button{
     width: 200px;
@@ -48,4 +49,5 @@ header.scrolleando img{
     height: 68px;
     top: 17px;
     left: calc(574px - 100px);
+    transition: .5s ease-in;
 }

@@ -1,0 +1,37 @@
+.seccion_conocer svg{
+    position: absolute;
+}
+.seccion_conocer .contenedor{
+   width: 1080px;
+   position: relative;
+   display: flex;
+   align-items: center;
+   padding-top: 132.5px;
+}
+
+.seccion_conocer .contenedor .izquierda{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 11px;
+    color: var(--color_white);
+}
+
+.seccion_conocer .contenedor .izquierda p{
+    width: 586px;
+    height: 154px;
+    margin-top: 13px;
+}
+
+.seccion_conocer .contenedor .izquierda img{
+    transform: translateX(-15px);
+}
+
+.seccion_conocer .contenedor > img{
+    position: absolute;
+    right: calc(-100px + 15px);
+}
+
+
+
+

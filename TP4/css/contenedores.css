@@ -9,16 +9,28 @@ header{
     width: 1280px;
     height: 227px;
     background: var(--degrade_header);
-    z-index: 20;
+    z-index: 500;
+    position: sticky;
+    top: 0;
+    transition: .5s ease-in;
 }
 
 header.scrolleando{
     height: 103px;
-    background: var(--degrade_header);
-    z-index: 300;
+    z-index: 500;
+    transition: .5s ease-in;
 }
 
 .seccion_edificios{
-    min-height: 720px;
+    height: 720px;
     margin-top: -100px;
+}
+
+.seccion_conocer{
+    width: 1280px;
+    height: calc(844.5px + 209px);
+    display: flex;
+    justify-content: center;
+    margin-top: -70px;
+    z-index: 100;
 }
