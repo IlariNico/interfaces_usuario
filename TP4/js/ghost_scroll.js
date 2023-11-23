@@ -9,8 +9,14 @@ function moverFotosGhost(){
 
     if(scrollY >= 1267 ){
         cards.forEach( e =>{
+            let extra = 0;
             velocidad = e.getAttribute("data-velocidad")
-            newPosX = scrollY * velocidad/60 - 300
+            if(velocidad == 6){
+                extra = 50;
+            }else if (velocidad == 3){
+                extra = 100
+            }
+            newPosX = scrollY * velocidad/60 - 300 + extra
             e.style.left = newPosX + "px"
         })
     }else if(scrollY > 1300){
