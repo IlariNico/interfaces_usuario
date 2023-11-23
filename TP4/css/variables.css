@@ -52,6 +52,9 @@
 .shadow_grey{
     box-shadow: 3px 6px 8px 4px rgba(0, 0, 0, 0.15);
 }
+.shadow_parallax{
+    box-shadow: 26px 29px 41px 14px rgba(0, 0, 0, 0.15);
+}
 .button{
     border: 9px solid var(--color_lightblue);
     background: var(--color_yellow);

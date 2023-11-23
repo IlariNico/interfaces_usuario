@@ -1,129 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/contenedores.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/edificio.css" />
+    <link rel="stylesheet" href="css/conocer.css" />
+    <link rel="stylesheet" href="css/amigos.css" />
+    <link rel="stylesheet" href="css/ghost.css" />
+    <link rel="stylesheet" href="css/vengadores.css" />
+    <link rel="stylesheet" href="css/diversion.css">
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="css/contenedores.css" />
-  <link rel="stylesheet" href="css/variables.css" />
-  <link rel="stylesheet" href="css/header.css" />
-  <link rel="stylesheet" href="css/edificio.css" />
-  <link rel="stylesheet" href="css/conocer.css" />
-  <link rel="stylesheet" href="css/amigos.css">
-  <link rel="stylesheet" href="css/ghost.css">
-</head>
-
-<body>
-  <header>
-    <div>
-      <div class="btn_menu">
-        <div class="borde shadow_blue">
-          <div class="linea top"></div>
+  <body>
+    <header>
+      <div>
+        <div class="btn_menu">
+          <div class="borde shadow_blue">
+            <div class="linea top"></div>
+          </div>
+          <div class="borde shadow_blue">
+            <div class="linea mid"></div>
+          </div>
+          <div class="borde shadow_blue">
+            <div class="linea bot"></div>
+          </div>
         </div>
-        <div class="borde shadow_blue">
-          <div class="linea mid"></div>
+        <img src="images/logo.png" alt="Logo" />
+        <button class="button font_button shadow_blue">COMPRAR</button>
+      </div>
+    </header>
+
+    <div class="seccion_edificios">
+      <img
+        src="images/cielo.png"
+        alt="cielo"
+        class="cielo"
+        data-velocidad="15"
+      />
+
+      <img
+        src="images/edificio_izquierda.png"
+        alt="Edificio izq"
+        class="edificio izquierda"
+        data-velocidad="5"
+      />
+      <img
+        src="images/edificio_medio.png"
+        alt="Edificio med"
+        class="edificio medio"
+        data-velocidad="10"
+      />
+      <img
+        src="images/edificio_derecha.png"
+        alt="Edificio der"
+        class="edificio derecha"
+        data-velocidad="5"
+      />
+
+      <img
+        src="images/violeta.png"
+        alt="Spider violeta"
+        class="spiderman violeta"
+        data-velocidad="30"
+      />
+      <img
+        src="images/rojo.png"
+        alt="Spider rojo"
+        class="spiderman rojo"
+        data-velocidad="30"
+      />
+      <img
+        src="images/negro.png"
+        alt="Spider negro"
+        class="spiderman negro"
+        data-velocidad="30"
+      />
+
+      <img
+        src="images/telaaraña_rojo.png"
+        alt=" telaaraña_rojo"
+        class="telaaraña roja"
+      />
+      <img
+        src="images/telaaraña_negro.png"
+        alt=" telaaraña_negro"
+        class="telaaraña negra"
+      />
+    </div>
+
+    <div class="seccion_conocer">
+      <div class="contenedor">
+        <div class="izquierda">
+          <h1 class="h1">Conoce a Spidey y sus sorprendentes amigos</h1>
+          <p class="p">
+            Spidey, nuestro lanzador de telarañas favorito se une a Ghost-Spider
+            (Gwen Stacey) y Miles Morales para formar el equipo de Spidey, con
+            la ayuda del cómico pero leal robot de Spidey, TRACE-E. Si Spidey se
+            encuentra en una situación difícil donde necesita aún más poder de
+            superhéroe, tengan la seguridad de que un amigo de los Vengadores
+            correrá para ayudar.
+          </p>
+          <img
+            src="./images/conoce_amigos.png"
+            alt="Conoce a los amigos"
+            class="shadow_grey"
+          />
         </div>
-        <div class="borde shadow_blue">
-          <div class="linea bot"></div>
+        <img
+          src="./images/duende.png"
+          alt="duende"
+          data-velocidad="5"
+          class="duende"
+        />
+      </div>
+    </div>
+
+    <div class="seccion_amigos">
+      <div class="contenedor">
+        <div class="item">
+          <img
+            src="./images/amigos_pp.png"
+            alt="Peter Parker saltando"
+            class="peter_parker shadow_blue"
+          />
+          <p class="p">
+            Peter Parker, un joven huérfano neoyorquino que adquiere
+            superpoderes después de ser mordido por una araña radiactiva, y cuya
+            ideología como héroe se ve reflejada primordialmente en la expresión
+            ”un gran poder conlleva una gran responsabilidad”.
+          </p>
+        </div>
+        <div class="item">
+          <img
+            src="./images/amigos_negro.png"
+            alt="Spidy Negro saltando"
+            class="negro shadow_blue"
+          />
+          <p class="p">
+            Tras la muerte de Peter Parker, es quien toma la identidad de
+            Spider-Man. La elección del presidente Barack Obama en enero de
+            2009, fue una fuente de inspiración para el cambio de etnicidad de
+            Spider-Man.
+          </p>
+        </div>
+        <div class="item">
+          <img
+            src="./images/amigos_gwen.png"
+            alt="Gwen Stacy saltando"
+            class="gwen shadow_blue"
+          />
+          <p class="p">
+            El personaje es una variante de El Hombre Araña, una versión de
+            universo alternativo de Gwen Stacy. Ella reside en la "Tierra-65",
+            donde, en lugar de Peter Benjamin Parker, Gwen Stacy fue mordida por
+            la Araña Radiactiva
+          </p>
         </div>
       </div>
-      <img src="images/logo.png" alt="Logo" />
-      <button class="button font_button shadow_blue">COMPRAR</button>
     </div>
-  </header>
 
-  <div class="seccion_edificios">
-    <img src="images/cielo.png" alt="cielo" class="cielo" data-velocidad="15" />
-
-    <img src="images/edificio_izquierda.png" alt="Edificio izq" class="edificio izquierda" data-velocidad="5" />
-    <img src="images/edificio_medio.png" alt="Edificio med" class="edificio medio" data-velocidad="10" />
-    <img src="images/edificio_derecha.png" alt="Edificio der" class="edificio derecha" data-velocidad="5" />
-
-    <img src="images/violeta.png" alt="Spider violeta" class="spiderman violeta" data-velocidad="30" />
-    <img src="images/rojo.png" alt="Spider rojo" class="spiderman rojo" data-velocidad="30" />
-    <img src="images/negro.png" alt="Spider negro" class="spiderman negro" data-velocidad="30" />
-
-    <img src="images/telaaraña_rojo.png" alt=" telaaraña_rojo" class="telaaraña roja" />
-    <img src="images/telaaraña_negro.png" alt=" telaaraña_negro" class="telaaraña negra" />
-  </div>
-
-  <div class="seccion_conocer">
-    
-    <div class="contenedor">
-      <div class="izquierda">
-        <h1 class="h1">Conoce a Spidey y sus sorprendentes amigos</h1>
-        <p class="p">
-          Spidey, nuestro lanzador de telarañas favorito se une a Ghost-Spider
-          (Gwen Stacey) y Miles Morales para formar el equipo de Spidey, con
-          la ayuda del cómico pero leal robot de Spidey, TRACE-E. Si Spidey se
-          encuentra en una situación difícil donde necesita aún más poder de
-          superhéroe, tengan la seguridad de que un amigo de los Vengadores
-          correrá para ayudar.
-        </p>
-        <img src="./images/conoce_amigos.png" alt="Conoce a los amigos" class="shadow_grey"/>
-      </div>
-      <img src="./images/duende.png" alt="duende" data-velocidad="5" class="duende" />
-    </div>
-  </div>
-
-  <div class="seccion_amigos">
-    <div class="contenedor">
-      <div class="item">
-        <img src="./images/amigos_pp.png" alt="Peter Parker saltando" class="peter_parker shadow_blue" />
-        <p class="p">
-          Peter Parker, un joven huérfano neoyorquino que adquiere
-          superpoderes después de ser mordido por una araña radiactiva, y cuya
-          ideología como héroe se ve reflejada primordialmente en la expresión
-          ”un gran poder conlleva una gran responsabilidad”.
-        </p>
-      </div>
-      <div class="item">
-        <img src="./images/amigos_negro.png" alt="Spidy Negro saltando" class="negro shadow_blue" />
-        <p class="p">
-          Tras la muerte de Peter Parker, es quien toma la identidad de
-          Spider-Man.
-          La elección del presidente Barack Obama en enero de 2009, fue una fuente de inspiración para el cambio de
-          etnicidad de Spider-Man.
-        </p>
-      </div>
-      <div class="item">
-        <img src="./images/amigos_gwen.png" alt="Gwen Stacy saltando" class="gwen shadow_blue" />
-        <p class="p">
-          El personaje es una variante de El Hombre Araña, una versión de universo alternativo de Gwen Stacy. Ella
-          reside en la "Tierra-65", donde, en lugar de Peter Benjamin Parker, Gwen Stacy fue mordida por la Araña
-          Radiactiva
-        </p>
+    <div class="seccion_ghost">
+      <div class="contenedor">
+        <div class="captura_ghost _1" data-velocidad="8">
+          <img src="./images/captura1.png" alt="Captura ghost spider 1" />
+        </div>
+        <div class="captura_ghost _2" data-velocidad="6">
+          <img src="./images/captura2.png" alt="Captura ghost spider 1" />
+        </div>
+        <div class="captura_ghost _3" data-velocidad="3">
+          <img src="./images/captura3.png" alt="Captura ghost spider 1" />
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="seccion_ghost">
-    <div class="contenedor">
-      <div class="captura_ghost _1" data-velocidad="8" ><img src="./images/captura1.png" alt="Captura ghost spider 1" ></div> 
-      <div class="captura_ghost _2" data-velocidad="6"><img src="./images/captura2.png" alt="Captura ghost spider 1" ></div> 
-      <div class="captura_ghost _3" data-velocidad="3"><img src="./images/captura3.png" alt="Captura ghost spider 1" ></div> 
+    <div class="seccion_vengadores">
+      <h1 class="h1">Los vengadores acompañando tu aventura</h1>
+      <div class="contenedor_parallax ">
+        <div class="parallax ">
+          <img
+            src="./images/cielo2.png"
+            alt=""
+            class="cielo "
+            data-velocidad="5"
+          />
+          <img
+            src="./images/pastos.png"
+            alt=""
+            class="pastos shadow_parallax"
+            data-velocidad="5"
+          />
+          <img
+            src="./images/arboles.png"
+            alt=""
+            class="arboles"
+            data-velocidad="5"
+          />
+          <img src="./images/hulk.png" alt="" class="hulk" data-velocidad="6" />
+          <img
+            src="./images/msmarvel.png"
+            alt=""
+            class="msmarvel"
+            data-velocidad="12"
+          />
+          <img
+            src="./images/pantera.png"
+            alt=""
+            class="pantera"
+            data-velocidad="28"
+          />
+        </div>
+      </div>
     </div>
-  </div>
+
+    <div class="seccion_diversion">
+      <div class="contenedor">
+        <h1 class="h1">Mas amigos, mas diversión!</h1>
+        <div class="subcontenedor">
+          <div class="columna_imagen">
+            <img
+              src="./images/diversion_1.png"
+              alt="Diversion 1"
+              class="diversion_1"
+            />
+            <img
+              src="./images/diversion_2.png"
+              alt="Diversion 2"
+              class="diversion_2"
+            />
+            <img
+              src="./images/diversion_3.png"
+              alt="Diversion 3"
+              class="diversion_3"
+            />
+            <img
+              src="./images/diversion_4.png"
+              alt="Diversion 4"
+              class="diversion_4"
+            />
+          </div>
+          <div class="columna_texto">
+            <div class="item">
+              <h2 class="h2">Mas de 100 misiones para que juegues sin parar!</h2>
+              <p class="p">
+                Tus padres, contentos. Explora el emocionante mundo de Spider-Man
+                con más de 100 misiones que te mantendrán en constante acción y
+                adrenalina. Enfréntate a desafíos únicos, desentraña misterios, y
+                ayuda a Spider-Man a mantener la paz en la ciudad mientras te
+                sumerges en la piel del héroe arácnido. ¿Tienes lo que se necesita
+                para superar todas las misiones y convertirte en el auténtico
+                Spider-Man?
+              </p>
+            </div>
   
-  <div class="seccion_vengadores">
-    <h1>
-      Los vengadores acompañando tu aventura
-    </h1>
-    <div class="parallax">
-      <img src="./images/cielo2.png" alt="" class="cielo">
-      <img src="./images/pastos.png" alt="" class="pastos">
-      <img src="./images/arboles.png" alt="" class="arboles">
-      <img src="./images/hulk.png" alt="" class="hulk">
-      <img src="./images/msmarvel.png" alt="" class="msmarvel">
-      <img src="./images/pantera.png" alt="" class="pantera">
-    </div>
-  </div>
-  <script src="js/header_sticky.js"></script>
-  <script src="js/parallax_scroll.js"></script>
-  <script src="js/duende_scroll.js"></script>
-  <script src="js/cards_amigos.js"></script>
-  <script src="js/ghost_scroll.js"></script>
-</body>
+            <div class="item">
+              <h2 class="h2">Escenas deslumbrantes que te sorprenderán</h2>
+              <p class="p">
+                Sumérgete en un universo de maravillas visuales con 'Spider-Man:
+                [nombre del juego]'. Nuestro juego te llevará a través de escenas
+                deslumbrantes que te dejarán sin aliento. Desde los rascacielos de
+                Nueva York hasta los intrincados detalles de la vida de Peter
+                Parker, cada rincón de este mundo te sorprenderá. Prepárate para
+                una experiencia única que desafiará tus expectativas y te
+                transportará a un asombroso viaje con el Hombre Araña.
+              </p>
+            </div>
+  
+            <div class="item">
+              <h2 class="h2">
+                Cada misión te dará puntos que no sirven para nada!
+              </h2>
+              <p class="p">
+                Cada misión es una oportunidad para vivir la emocionante vida del
+                Hombre Araña, y aunque los puntos que ganarás no tengan un
+                propósito específico, la verdadera recompensa está en la diversión
+                y la inmersión que experimentarás en cada desafío. No necesitas
+                acumular puntos para sentirte como un auténtico superhéroe, ya que
+                la adrenalina de salvar la ciudad y la emoción de las acrobacias
+                en el aire son más que suficientes. ¡Así que prepárate para
+                sumergirte en la acción y la aventura, sin preocuparte por los
+                puntos, y vive la experiencia definitiva de Spider-Man!
+              </p>
+            </div>
+  
+            <div class="item">
+              <h2 class="h2">Derrota a los villanos y diviértete</h2>
+              <p class="p">
+                la diversión está asegurada mientras te enfrentas a los infames
+                villanos de la ciudad de Nueva York. Enfréntate a desafíos épicos,
+                combate a tus enemigos más temibles y disfruta de una experiencia
+                llena de acción y emoción. Cada encuentro con los villanos te
+                sumergirá en una batalla trepidante y te llevará más cerca de
+                convertirte en el auténtico Hombre Araña. Así que, ¿estás listo
+                para derrotar a los villanos y sumergirte en la aventura
+                definitiva de Spider-Man?"
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      
+    </div>
+
+    <script src="js/header_sticky.js"></script>
+    <script src="js/parallax_scroll.js"></script>
+    <script src="js/duende_scroll.js"></script>
+    <script src="js/cards_amigos.js"></script>
+    <script src="js/ghost_scroll.js"></script>
+    <script src="js/parallax_movemouse.js"></script>
+  </body>
 </html>

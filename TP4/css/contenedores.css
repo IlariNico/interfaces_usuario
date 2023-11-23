@@ -3,6 +3,8 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    background-color: var(--color_black);
 }
 
 header{
@@ -32,23 +34,28 @@ header.scrolleando{
     display: flex;
     justify-content: center;
     margin-top: -70px;
-    z-index: 100;
+    z-index: 250;
 
     background-image: url("../images/fondo_conoce.webp");
     background-position: 100% 100%;
     background-repeat: no-repeat;
+
+    background-color: var(--color_white);
 }
 
 .seccion_amigos{
     display: flex;
     justify-content: center;
     z-index: 200;
-    margin-top: 160px;
+    padding-top: 160px;
+    width: 100%;
+    background-color: var(--color_white);
+    padding-bottom: calc(125px + 57px);
 }
 
 .seccion_ghost{
     width: 100%;
-    height: 566px;
+    min-height: 566px;
 
     background-image: url("../images/fondo_ghost.png");
     background-size: 100% 100%;
@@ -56,6 +63,29 @@ header.scrolleando{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -57px;
+    z-index: 250;
     
-    margin-top: 125px;
+}
+
+.seccion_vengadores{
+    background-color: var(--color_black);
+    width: 1080px;
+    height: 775px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 55.11px;
+    position: relative;
+}
+
+.seccion_diversion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background: url("../images/fondo_diversion.webp");
+    padding-top: 494px;
 }

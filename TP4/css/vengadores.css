@@ -1,0 +1,51 @@
+.seccion_vengadores h1{
+    width: 667px;
+    color: var(--color_white);
+    position: absolute;
+    top: 170px;
+}
+
+.seccion_vengadores .parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 528px;
+    
+}
+.seccion_vengadores .contenedor_parallax .parallax{
+    position: absolute;
+    top: calc(389px + 33px);
+}
+.seccion_vengadores .parallax img{
+    position: absolute;
+}
+
+.seccion_vengadores .parallax img.pastos{
+    bottom: 0;
+    z-index: 70;
+}
+.seccion_vengadores .parallax img.arboles{
+    z-index: 50;
+    bottom: 0;
+}
+.seccion_vengadores .parallax img.hulk{
+    z-index: 55;
+    top: 110px;
+    left: 699px;
+}
+.seccion_vengadores .parallax img.pantera{
+    top: -219px;
+    left: 512px;
+    z-index: 57;
+    width: 368.308px;
+    height: 552.462px;
+    transform: rotate(13.615deg);
+}
+.seccion_vengadores .parallax img.msmarvel{
+    top: -49px;
+    left: 87px;
+    z-index: 56;
+    width: 451.258px;
+    height: 591.442px;
+}
