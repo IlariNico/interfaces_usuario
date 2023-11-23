@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/edificio.css" />
   <link rel="stylesheet" href="css/conocer.css" />
   <link rel="stylesheet" href="css/amigos.css">
+  <link rel="stylesheet" href="css/ghost.css">
 </head>
 
 <body>
@@ -48,9 +49,7 @@
   </div>
 
   <div class="seccion_conocer">
-    <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="845" viewBox="0 0 1280 845" fill="none">
-      <path d="M0 715.25L1280 845V0.5L0 80V715.25Z" fill="#8F6AA6" />
-    </svg>
+    
     <div class="contenedor">
       <div class="izquierda">
         <h1 class="h1">Conoce a Spidey y sus sorprendentes amigos</h1>
@@ -62,7 +61,7 @@
           superhéroe, tengan la seguridad de que un amigo de los Vengadores
           correrá para ayudar.
         </p>
-        <img src="./images/conoce_amigos.png" alt="Conoce a los amigos" />
+        <img src="./images/conoce_amigos.png" alt="Conoce a los amigos" class="shadow_grey"/>
       </div>
       <img src="./images/duende.png" alt="duende" data-velocidad="5" class="duende" />
     </div>
@@ -98,10 +97,33 @@
       </div>
     </div>
   </div>
+
+  <div class="seccion_ghost">
+    <div class="contenedor">
+      <div class="captura_ghost _1" data-velocidad="8" ><img src="./images/captura1.png" alt="Captura ghost spider 1" ></div> 
+      <div class="captura_ghost _2" data-velocidad="6"><img src="./images/captura2.png" alt="Captura ghost spider 1" ></div> 
+      <div class="captura_ghost _3" data-velocidad="3"><img src="./images/captura3.png" alt="Captura ghost spider 1" ></div> 
+    </div>
+  </div>
+  
+  <div class="seccion_vengadores">
+    <h1>
+      Los vengadores acompañando tu aventura
+    </h1>
+    <div class="parallax">
+      <img src="./images/cielo2.png" alt="" class="cielo">
+      <img src="./images/pastos.png" alt="" class="pastos">
+      <img src="./images/arboles.png" alt="" class="arboles">
+      <img src="./images/hulk.png" alt="" class="hulk">
+      <img src="./images/msmarvel.png" alt="" class="msmarvel">
+      <img src="./images/pantera.png" alt="" class="pantera">
+    </div>
+  </div>
   <script src="js/header_sticky.js"></script>
   <script src="js/parallax_scroll.js"></script>
   <script src="js/duende_scroll.js"></script>
   <script src="js/cards_amigos.js"></script>
+  <script src="js/ghost_scroll.js"></script>
 </body>
 
 </html>

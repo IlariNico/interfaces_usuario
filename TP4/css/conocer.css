@@ -1,6 +1,4 @@
-.seccion_conocer svg{
-    position: absolute;
-}
+
 .seccion_conocer .contenedor{
    width: 1080px;
    position: relative;
@@ -24,7 +22,11 @@
 }
 
 .seccion_conocer .contenedor .izquierda img{
-    transform: translateX(-15px);
+    transform:rotate(-2.222deg);
+    width: 751.649px;
+    height: 413.131px;
+    border-radius: 26px;
+    border: 9px solid #FFF;
 }
 
 .seccion_conocer .contenedor > img{

@@ -6,7 +6,7 @@ let s_violeta = document.querySelector(".spiderman.violeta");
 let t_negro = document.querySelector(".telaaraña.negra")
 let t_rojo = document.querySelector(".telaaraña.roja")
 
-let cielo = document.querySelector(".cielo")
+let cielo = document.querySelector(".seccion_edificios .cielo")
 
 let e_izq = document.querySelector(".edificio.izquierda")
 let e_med = document.querySelector(".edificio.medio")

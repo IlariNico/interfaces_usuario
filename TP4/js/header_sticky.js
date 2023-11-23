@@ -9,3 +9,9 @@ window.addEventListener("scroll",()=>{
 
     
 })
+
+document.addEventListener('DOMContentLoaded', function() {
+    if(window.scrollY != 0){
+        header.classList.add("scrolleando")
+    }
+});

@@ -1,0 +1,36 @@
+
+
+.seccion_ghost .contenedor{
+    width: 1080px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+.seccion_ghost .contenedor .captura_ghost{
+    transition: transform 1s;
+    z-index: 40;
+    transform: rotate(-13.078deg);
+    position: absolute;
+    top: -380px;
+}
+.seccion_ghost .contenedor .captura_ghost:hover,.seccion_ghost .contenedor .captura_ghost._2:hover,.seccion_ghost .contenedor .captura_ghost._3:hover{
+    transform: skew(0deg, 10deg) rotate(0);
+    
+}
+.seccion_ghost .contenedor .captura_ghost._2{
+    z-index: 50;
+    width: 543.218px;
+    height: 325.787px;
+    transform: rotate(-26.474deg);
+    top: -74px;
+    margin-top: -120px;
+}
+.seccion_ghost .contenedor .captura_ghost._3{
+    z-index: 60;
+    width: 546.108px;
+    height: 326.509px;
+    transform: rotate(-36.016deg);
+    margin-top: -120px;
+    top: 138px;
+}

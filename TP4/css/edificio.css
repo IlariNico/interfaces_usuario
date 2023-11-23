@@ -1,11 +1,12 @@
 .seccion_edificios{
-    width: 100%;
+    width:100% ;
     position: relative;
     overflow-x: clip;
 }
 .seccion_edificios .cielo{
     z-index: 5;
-    width: 1280px;
+    width: 100%;
+    height: 130%;
     position: absolute;
     top: -100px;
 }
@@ -65,9 +66,8 @@
 }
 
 .seccion_edificios .telaaraña.roja{
-    left: -172px;
+    left: -180px;
     top: 250px;
-    z-index: 250;
 }
 .seccion_edificios .telaaraña.negra{
     top: 263px;
