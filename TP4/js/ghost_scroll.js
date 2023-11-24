@@ -7,7 +7,7 @@ function moverFotosGhost(){
     let velocidad;
     let newPosX;
 
-    if(scrollY >= 1267 ){
+    if(scrollY >= 1267 && scrollY < 3500){
         cards.forEach( e =>{
             let extra = 0;
             velocidad = e.getAttribute("data-velocidad")

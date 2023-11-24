@@ -1,0 +1,57 @@
+.seccion_correo > img{
+    position: absolute;
+    bottom: 0;
+}
+
+.seccion_correo .contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1080px;
+}
+
+.seccion_correo .contenedor h1{
+    width: 816px;
+    text-align: center;
+}
+
+.seccion_correo .contenedor form{
+    display: flex;
+    align-items: center;
+    margin-top: 46px;
+}
+
+.seccion_correo .contenedor form input{
+    padding: 41px 273px 40px 52px;
+    border-radius: 50px 0px 0px 50px;
+    border-top: 9px solid #2982FF;
+    border-bottom: 9px solid #2982FF;
+    border-left: 9px solid #2982FF;
+    border-right: none;
+    background-color: var(--color_white);
+    color: rgba(0, 0, 0, 0.39);
+
+    font-family: Lato,sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 94.5%; /* 18.9px */
+    letter-spacing: 2.2px;
+}
+.seccion_correo .contenedor form button{
+    border-radius: 0px 50px 50px 0px;
+    border: 9px solid #2982FF;
+    background: #FFE901;
+    box-shadow: 4px 5px 0px 0px #02187E;
+    width: 218px;
+    height: 122px;
+}
+
+.seccion_correo .permisos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 17px;
+    width: 578px;
+    margin-top: 39px;
+}

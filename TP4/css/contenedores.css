@@ -117,3 +117,15 @@ header.scrolleando{
 
 }
 
+.seccion_correo{
+    width: 100%;
+    min-height: 1296px;
+    position: relative;
+    background: linear-gradient(0deg, #F7E3D8 21.2%, #8FBEFC 81.48%);
+
+    display: flex;
+    justify-content: center;
+    margin-top: -62px;
+    padding-top: calc(152px + 62px);
+    overflow: hidden;
+}
