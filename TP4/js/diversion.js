@@ -5,7 +5,7 @@ window.addEventListener("scroll",mostrarItemsDiversion)
 let ultimaPoscion = 0;
 function mostrarItemsDiversion(){
     let scrollY = window.scrollY;
-    if(scrollY < 4625){
+    if(scrollY < 4335){
         imagenes.forEach(e =>{
             e.style.opacity = 0;
         })
@@ -18,7 +18,7 @@ function mostrarItemsDiversion(){
         items[0].style.opacity =1;
         items[0].classList.add("aparecerOpacidad");
 
-    }else if(scrollY >= 4625 && scrollY < 5027){
+    }else if(scrollY >= 4335 && scrollY < 4762){
 
         imagenes.forEach(e =>{
             e.style.opacity = 0;
@@ -31,7 +31,7 @@ function mostrarItemsDiversion(){
         })
         items[1].style.opacity =1;
         items[1].classList.add("aparecerOpacidad");
-    }else if(scrollY >= 5027 && scrollY < 5578){
+    }else if(scrollY >= 4762 && scrollY < 5275){
         imagenes.forEach(e =>{
             e.style.opacity = 0;
         })

@@ -25,7 +25,7 @@
 .seccion_diversion .columna_imagen img{
     position: sticky;
     top: 150px;
-    opacity: 0;
+    opacity: 1;
     transition: opacity .5s ease-in-out;
 }
 .seccion_diversion .columna_imagen img:nth-child(2){
