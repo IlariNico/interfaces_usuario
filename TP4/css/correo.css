@@ -1,6 +1,7 @@
 .seccion_correo > img{
     position: absolute;
     bottom: 0;
+    width: 100%;
 }
 
 .seccion_correo .contenedor{
@@ -54,4 +55,66 @@
     gap: 17px;
     width: 578px;
     margin-top: 39px;
+}
+
+.seccion_correo .contenedor_spritesheet.sg_1{
+    /*width: 562px;*/
+    width: 34px;
+    height: 43px;
+    margin: auto;
+    background: url("../images/spriteSG_1.png");
+    
+    position: absolute;
+    bottom: 157px;
+    left: 569px;
+    animation: walkGwen1 1.93s steps(11) infinite;
+}
+
+
+.seccion_correo .contenedor_spritesheet.sp_1{
+    width: 44px;
+    height: 34px;
+
+    background:url("../images/spriteSP_1.png");
+    position: absolute;
+    right: 148px;
+    bottom: 242px;
+
+    animation: walkSP1 .8s steps(6) infinite;
+}
+
+.seccion_correo .contenedor_spritesheet.sp_1:hover{
+    width: 44px;
+    height: 43px;
+    
+    background: url("../images/spriteSP_2.png");
+    animation: walkSP2 1.93s steps(11) infinite;
+}
+
+
+@keyframes walkGwen1 {
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: -384px;
+    }
+}
+
+@keyframes walkSP1 {
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: -268px;
+    }
+}
+
+@keyframes walkSP2 {
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: -484px;
+    }
 }
