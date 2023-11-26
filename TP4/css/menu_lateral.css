@@ -39,7 +39,7 @@ line-height: normal;
     animation: spiderman_logo_boton 2s forwards;
 }
 .menu_lateral.open ul{
-    margin-left:30px;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,10 +52,10 @@ line-height: normal;
 
 .menu_lateral.open li{
     display: flex;
-    height: 70px;
+
     list-style: none;
     margin-left: 0PX;
-    margin-right: 70px;
+    margin-right: 10px;
 }
 
 
