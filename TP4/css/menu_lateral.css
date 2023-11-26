@@ -1,0 +1,109 @@
+
+button{
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.menu_lateral.open{
+    display: block;
+    font-family: 'Lato', sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    z-index: 1000;
+    position: absolute;
+    left:0;
+    top:220px;
+    height: 500px;
+}
+.button.font_button.shadow_blue svg{
+    height: 50px;
+
+    display: none;
+}
+.button.font_button.shadow_blue:hover{
+    transition: 1s;
+    background-color: red;
+}
+.button.font_button.shadow_blue:hover P{
+    transition: 1s;
+    display: none;
+}
+.button.font_button.shadow_blue:hover svg{
+    display: block;
+    animation: spiderman_logo_boton 2s forwards;
+}
+.menu_lateral.open ul{
+    margin-left:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu_lateral{
+    display: none;
+}
+
+.menu_lateral.open li{
+    display: flex;
+    height: 70px;
+    list-style: none;
+    margin-left: 0PX;
+    margin-right: 70px;
+}
+
+
+.contenedor_personaje{
+    background-color: rgb(70, 218, 255);
+    border-radius: 15px;
+    display: flex;
+    width: 160px;
+    visibility: hidden;
+    align-items: center;
+}
+
+.contenedor_personaje.open{
+    animation: contenedor_personaje_entra 1.5s forwards;
+}
+
+.contenedor_personaje img{
+    width: 60px;
+    display: none;
+    border-radius: 30px;
+}
+
+.contenedor_personaje.open img{
+    display: block;
+}
+
+.texto_personaje{
+    margin-left: 15px;
+    width: 60px;
+}
+
+@keyframes contenedor_personaje_entra {
+    0%{
+        visibility: visible;
+        transform: translateX(-300px);
+    }
+    100%{
+        visibility: visible;
+        transform: translateX(0px);
+    }
+}
+@keyframes spiderman_logo_boton{
+    0%{
+        transform: translateX(150px) rotate(0deg);
+        
+    }
+    100%{
+        transform: translateX(0px) rotate(720deg);
+        
+    }
+}

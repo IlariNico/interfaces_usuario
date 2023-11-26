@@ -9,10 +9,14 @@ header > div{
 }
 
 .btn_menu{
+    background: none;
+    border: none;
     display: flex;
     flex-direction: column;
     gap: 0px;
-    
+    cursor:pointer;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 .btn_menu .borde{
     width: 46px;
@@ -29,6 +33,81 @@ header > div{
     background-color: var(--color_yellow);
     
     border-radius: 8px;
+}
+.btn_menu .top,
+.btn_menu .mid,
+.btn_menu .bot {
+    margin: 0 auto;
+    transform: translateY(0) rotate(0deg);
+}
+.btn_menu.open .top{
+    animation: top-line-animation 1s forwards;
+}
+.btn_menu.open .mid{
+    animation: mid-line-animation 1s forwards;
+}
+.btn_menu.open .bot{
+    animation: bot-line-animation 1s forwards;
+}
+.btn_menu .top{
+    animation: top-line-animation-close 1s forwards;
+}
+.btn_menu .mid{
+    animation: mid-line-animation-close 1s forwards;
+}
+.btn_menu .bot{
+    animation: bot-line-animation-close 1s forwards;
+}
+@keyframes top-line-animation{
+    50%,100%{
+        margin:0 auto;
+        transform:translateY(12px) rotate(-45deg);
+    }
+}
+@keyframes top-line-animation-close{
+    0%{
+        margin:0 auto;
+        transform:translateY(12px) rotate(-45deg);
+    }
+    50%,100%{
+        margin:0 auto;
+        transform:translateY(0px) rotate(0deg);
+    }
+}
+@keyframes bot-line-animation{
+    50%,100%{
+        margin:0 auto;
+        transform:translateY(-12px) rotate(45deg);
+    }
+}
+@keyframes bot-line-animation-close{
+    0%{
+        margin:0 auto;
+        transform:translateY(-12px) rotate(45deg);
+    }
+    50%,100%{
+        margin:0 auto;
+        transform:translateY(0px) rotate(0deg);
+    }
+}
+@keyframes mid-line-animation{
+    20%,100%{
+        margin:0 auto;
+        width: 0;
+        opacity: 0;
+    }
+}
+@keyframes mid-line-animation-close{
+    0%{
+        margin:0 auto;
+        width: 0;
+        opacity: 0;
+    }
+    20%,100%{
+        margin:0 auto;
+        width: 38px;
+        opacity: 1;
+    }
 }
 header img{
     width: 590px;
