@@ -13,27 +13,33 @@
 .seccion_edificios img.edificio{
     position: absolute;
     bottom: 0;
+
 }
 
 .seccion_edificios img.edificio.izquierda{
     left: -54px;
     z-index: 35;
     bottom: -35px;
+    animation: 3s aparecerEdificioIzquierda 5s ease-out;
 }
 
 .seccion_edificios img.edificio.medio{
     left: 381px;
     z-index: 20;
+
+    animation: 3s aparecerEdificioMedio 5s ease-out;
 }
 
 .seccion_edificios img.edificio.derecha{
     right: -8px;
     z-index: 30;
+    animation: 3s aparecerEdificioDerecha 5s ease-out;
 }
 
 
 .seccion_edificios .spiderman{
     position: absolute;
+
 }
 
 .seccion_edificios .spiderman.violeta{
@@ -45,7 +51,7 @@
 }
 
 .seccion_edificios .spiderman.rojo{
-    z-index: 260;
+    z-index: 240;
     width: 465px;
     height: 465px;
     top: calc(262px + 15px);
@@ -53,15 +59,17 @@
 }
 
 .seccion_edificios .spiderman.negro{
-    z-index: 270;
+    z-index: 240;
     width: 393px;
     height: 393px;
     top: 209px;
-    right: 192px;
+    right: 178px;
 }
 
 .seccion_edificios .telaaraña{
     position: absolute;
+    animation: 2s aparecerElementosOpacidad 3s ease-out;
+
     z-index: 300;
 }
 
@@ -71,5 +79,52 @@
 }
 .seccion_edificios .telaaraña.negra{
     top: 263px;
-    right: -146px;
+    right: -160px;
+}
+
+@keyframes aparecerEdificioIzquierda {
+    from{
+        bottom: -481px;
+    }
+    to{
+        bottom: -35px;
+    }
+}
+
+@keyframes aparecerEdificioMedio {
+    from{
+       bottom: -113px; 
+    }
+    to{
+        bottom: 0;
+    }
+}
+
+@keyframes aparecerEdificioDerecha {
+    from{
+        bottom: -626px;
+    }
+    to{
+        bottom: 0;
+    }
+}
+
+@keyframes aparecerElementosOpacidad {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes aparecerElementosOpacidadYScale {
+    from{
+        opacity: 0;
+        scale: 0;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
 }

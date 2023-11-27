@@ -66,8 +66,12 @@ line-height: normal;
     width: 160px;
     visibility: hidden;
     align-items: center;
+    cursor: pointer;
+    transition: background-color .2s ease-in;
 }
-
+.contenedor_personaje:hover{
+    background-color: rgb(37, 177, 212) ;
+}
 .contenedor_personaje.open{
     animation: contenedor_personaje_entra 1.5s forwards;
 }

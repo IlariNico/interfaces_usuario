@@ -1,0 +1,81 @@
+.popup{
+    position: fixed;
+    top: 0;
+    z-index: 3500;
+    width: 100vw;
+    height: 100vh;
+    
+    display: none;
+}
+.popup.fondoNegro{
+    background-color: var(--color_black);
+}
+.popup.desaparecer{
+    animation: desaparecerPopUp 1.2s;
+}
+.popup.mostrarse{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup .contenedor{
+    padding: 58px 61px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 59px;
+}
+.popup .contenedor.aparecer{
+    background-color: var(--color_black);
+    animation: desaparecerPopUp reverse 1.3s;
+}
+.popup .contenedor .informacion{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--color_white);
+}
+
+.popup .contenedor .informacion h2{
+    font-family: Lato,sans-serif;
+font-size: 60px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 10px;
+}
+
+.popup .contenedor .informacion #poderes{
+    margin-bottom: 20px;
+}
+
+.popup .cruz{
+    width: 89px;
+height: 89px;
+border-radius: 50px;
+background-color: var(--color_white);
+position: absolute;
+top: 28px;
+right: 35px;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+transition: background-color .5s ease-in-out;
+}
+
+.popup .cruz:hover{
+    background-color: rgb(218, 218, 218);
+}
+
+@keyframes desaparecerPopUp {
+    from{
+        scale: 1;
+    }
+    to{
+        scale: .3;
+        opacity: 0.1;
+        border-radius: 50px;
+    }
+}
